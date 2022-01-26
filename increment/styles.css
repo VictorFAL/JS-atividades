@@ -1,0 +1,29 @@
+#num-grid {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 200px;
+    text-align: center;
+}
+
+#numero {
+    font-size: 80px;
+    width: 134px;
+    text-align: right;
+    grid-area: 1 / 1 / span 2 / auto;
+}
+
+#incr {
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+#decr {
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+#msg {
+    text-align: center;
+    color: red;
+}

@@ -2,6 +2,7 @@ function incrementar() {
     let num = document.getElementById("numero").innerText;
     let newNum = parseInt(num) + 1;
     document.getElementById("numero").innerText = String(newNum);
+    document.getElementById("msg").innerText = ""
 }
 
 function decrementar() {
@@ -10,22 +11,6 @@ function decrementar() {
         let newNum = parseInt(num) - 1;
         document.getElementById("numero").innerText = String(newNum);
     } else {
-        console.log("Numero não pode ser menor que 0");
+        document.getElementById("msg").innerText = "Número não pode ser menor que zero"
     }
 }
-
-// var num = document.getElementById("numero").innerText;
-
-// function incrementar() {
-//     let newNum = parseInt(num) + 1;
-//     num = String(newNum);
-// }
-
-// function decrementar() {
-//     if(parseInt(num) > 0) {
-//         let newNum = parseInt(num) - 1;
-//         num = String(newNum);
-//     } else {
-//         console.log("Numero não pode ser menor que 0");
-//     }
-// }
